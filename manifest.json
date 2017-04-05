@@ -1,0 +1,23 @@
+{
+  "manifest_version" : 2,
+  "name": "Clippy for Facebook",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/", "https://www.facebook.com/*"
+      ],
+      "css":["clippy.css"],
+      "js":["jquery-1.7.min.js", "clippy.js", "agent.js", "sounds-mp3.js", "sounds-ogg.js", "content.js"]
+    }
+  ],
+  "browser_action": {
+    // "default_icon": "logo.png",
+    // "default_popup": "popup.html"
+  },
+  "background": {
+    // "scripts": ["background.js"]
+  },
+  "web_accessible_resources": ["map.png"]
+}
